@@ -111,6 +111,7 @@ body {
 }
 
 .nav {
+    position: relative;
     display: flex;
     column-gap: 50px;
 
@@ -149,8 +150,36 @@ body {
 .nav a:focus{
     color: var(--accent-color);
 }
-.nav .curent{
-    color: var(--accent-color)
+.nav .studio-curent{
+    color: var(--accent-color);
+}
+
+.nav .studio-curent::after{
+    display: block;
+    content: "";
+    width: 48px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 46px;
+    left: -2px;
+    background-color: var(--accent-color);
+}
+
+.nav .portfolio-curent {
+    color: var(--accent-color);
+}
+
+.nav .portfolio-curent::after {
+    display: block;
+    content: "";
+    width: 78px;
+    height: 4px;
+    border-radius: 2px;
+    position: absolute;
+    top: 46px;
+    left:93px;
+    background-color: var(--accent-color);
 }
 
 .nav-link-item{
@@ -751,8 +780,8 @@ position: relative;
 
 .backdrop{
     position: fixed;
-    top:0px;
-    left:0px;
+    top:0;
+    left:0;
     z-index: 100;
     width: 100%;
     height: 100%;
@@ -785,7 +814,7 @@ position: relative;
 .modal-close-btn {
     position: absolute;
     top: 8px;
-    left: 8px;
+    right: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
