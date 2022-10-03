@@ -191,6 +191,7 @@ body {
 .nav-link-mail{
     fill:var(--title-text-color);
     transition: color var(--transition-duration);
+    transition: fill var(--transition-duration);
 }
 
 .nav-link-item:hover .nav-link-mail ,
@@ -201,6 +202,7 @@ body {
 .nav-link-tel{
     fill:var(--title-text-color);
     transition: color var(--transition-duration);
+    transition: fill var(--transition-duration);
 }
 
 .nav-link-item:hover .nav-link-tel,
@@ -532,6 +534,7 @@ position: relative;
 .icon-link-clients{
     fill: var(--primary-icon-color);
     transition: color var(--transition-duration);
+    transition: fill var(--transition-duration);
 }
 
 .link-clients:hover,
