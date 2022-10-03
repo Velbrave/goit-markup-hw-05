@@ -189,7 +189,8 @@ body {
 }
 
 .nav-link-mail{
-    fill:var(--title-text-color)
+    fill:var(--title-text-color);
+    transition: color var(--transition-duration);
 }
 
 .nav-link-item:hover .nav-link-mail ,
@@ -198,7 +199,8 @@ body {
 }
 
 .nav-link-tel{
-    fill:var(--title-text-color)
+    fill:var(--title-text-color);
+    transition: color var(--transition-duration);
 }
 
 .nav-link-item:hover .nav-link-tel,
@@ -529,6 +531,7 @@ position: relative;
 
 .icon-link-clients{
     fill: var(--primary-icon-color);
+    transition: color var(--transition-duration);
 }
 
 .link-clients:hover,
@@ -719,7 +722,7 @@ position: relative;
     top: 0px;
     left: 0px;
     transform: translateY(100%);
-    transition: transform 250ms var(--transition-duration);
+    transition: transform var(--transition-duration);
     padding: 63px 24px;
     background-color: rgba(33, 150, 243, 0.9);
 }
